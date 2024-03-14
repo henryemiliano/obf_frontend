@@ -1,0 +1,59 @@
+@import "../styles/colors.module.scss";
+
+.episodeTitle {
+  font-size: 36px;
+  font-weight: bold;
+}
+.episodeButtonDiv {
+  display: flex;
+  gap: 15px;
+}
+
+.episodeButton {
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 20px;
+  color: $lightGray;
+  border-color: $lightRed;
+  background-color: transparent;
+  &:hover {
+    border-color: $darkRed;
+    color: white;
+    background-color: $darkGray;
+  }
+  &:disabled {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.player {
+  max-width: 100%;
+}
+@media (max-width: 425px) {
+  .episodeTitle {
+    font-size: 20px;
+    padding: 0px 10px;
+    word-wrap: break-word;
+  }
+  .player {
+    max-width: 100%;
+    margin-top: -60px;
+  }
+}
+@media (max-width: 320px) {
+  .player {
+    margin-top: -100px;
+  }
+  .episodeButtonDiv {
+    display: block;
+  }
+  .episodeButton {
+    margin-top: 10px;
+  }
+}

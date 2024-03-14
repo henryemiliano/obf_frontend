@@ -1,0 +1,17 @@
+.noSearchText {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header,
+.footer {
+  background-color: black;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent {
+  flex: 1 0 auto;
+}
